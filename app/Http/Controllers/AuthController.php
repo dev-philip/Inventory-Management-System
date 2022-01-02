@@ -37,12 +37,6 @@ class AuthController extends Controller
     }
 
     public function ResetPassword(Request $request){ //change password
-        echo "<script>
-        console.log('hello');
-        </script>";
-        return response('fref');
-
-        exit();
 
         $validatedData = $request->validate([
             'email' => 'required|max:255|email',
